@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WORD COUNTER</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .link{
+            background-color: rgba(0,0,0);
+            margin-top:0 ;
+            padding-top: 0;
+        }
+        
+        .header{
+            font-size: 70px;
+            font-weight: 700;
+            color: rgb(3, 3, 3);
+            text-decoration: underline;
+            /* -webkit-text-stroke: 1px #060505;
+            background: url(back.png);
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            animation: back 20s linear infinite; */
+        }
+        /* @keyframes back{
+            100%{
+                background-position: 6000px 0;
+            } */
+        
+        textarea{
+
+            border-color:black;
+            border-radius: 20px;
+            background-color: rgb(248 244 244 / 0%);
+            box-shadow: 3px 3px 3px 3px #000;
+            font-size: 24px;
+        }
+        span{
+            color: 4D2DB7;
+            font-weight: 200;
+        }
+        .container{
+            border: 2px solid;
+            background-image: url(/project\ images/book.jpg) ;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #count{
+            border-radius: 7px;
+            font-size: 16px;
+            padding: 4px;
+            transition: background-color 0.8s ease-out;
+            height: 40px;
+            width: 150px;
+            background-color: dimgrey;
+
+        }
+        #count:hover{background-color: #000;
+            color: aliceblue;
+            cursor: pointer;
+            
+        }
+        /* body{
+            
+            background-image: url(pexels-abdullah-ghatasheh-1631677.jpg) ;
+            background-size: cover;
+            background-repeat: no-repeat;    
+            
+
+        } */
+        /* .img{
+            background: linear-gradient(
+                rgba(0,0,0,0.8)
+                rgba(0,0,0,0.8)
+            );
+        } */
+        span{
+            text-decoration: underline;
+            font-weight: 200;
+            font-size: 38px;
+            cursor: pointer;
+        }
+        image{
+            width: 60%;
+        }
+        .navbar {
+            background: rgba(0,0,0);
+            margin: 0;
+            padding: 0;
+            height: 80px;
+        }
+
+    .nav-list{
+        list-style-type: none;
+        display: flex;
+        justify-content: center; 
+        margin-top: 15px;
+        padding: 0; 
+        margin: 0;
+     }
+
+
+   .nav-list li {
+     margin: 0 60px;
+   }
+
+
+   .nav-list li a {
+     font-size: 25px;
+     color: #fcfafa;
+     text-decoration: none;
+     padding: 25px 50px 19px;
+     display: block;
+     font-weight: 600;
+     border-radius: 5px;
+     transition: background-color 0.2s ease-out;
+   }
+
+
+   .nav-list li a:hover {
+     background-color: #302a2a;
+     color: white;
+     text-decoration: underline;
+     
+     transform: scale(1.1);
+     
+   }
+
+    .wcimg{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            size: 1px;
+            opacity: 1;
+        }
+        .count {
+            height: 200px;
+  background-color: #000000;
+  width: 30%;
+  padding: 20px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  margin-top: 80px;
+  top: 90%;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(30, 21, 49, 0.4);
+}
+.count p {
+  color: #a0a0c0;
+  font-size: 30px;
+}
+.count h5 {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+
+    </style>
+</head>
+<body align="center">
+    <!-- <section class="links">
+            
+        <nav class="navbar">
+            <ul class="nav-list">
+              <li><a href="project.html">Home</a></li>
+              <li><a href="introduction_1.html">intro</a></li>
+              <li><a href="login_page.html">Login</a></li>
+              <li><a href="abot_team.html">About us</a></li>
+            </ul>
+        </nav> -->
+        
+    
+    <div class="container">
+        <section class="links">
+            
+            <nav class="navbar">
+                <ul class="nav-list">
+                  <li><a href="project.html">Home</a></li>
+                  <li><a href="introduction_1.html">intro</a></li>
+                  <li><a href="login_page.html">Login</a></li>
+                  <li><a href="abot_team.html">About us</a></li>
+                </ul>
+            </nav>
+        
+            <h1 class="header"> WORDS COUNTER</h1>
+        
+        <img src="word_counter image.png" alt="" class="wcimg" width="90px">
+        <br>
+        <br>
+          
+        <div  >
+            <span><i>Enter Words Which Contain Either Alphabets Or Numbers :-</i></span><br>
+            <textarea name="word_counter" id="input-textarea" cols="80" rows="14">            </textarea>
+        </div>
+            <br>
+        <!-- <div>
+            <input type="button" value="COUNT NOW" id="count">
+        </div> -->
+         <br>
+         <br>
+         <br>
+         <br>
+        <!-- <div class="result">
+            <table border="3" cellpadding="20" cellspacing="1" align="center">
+                <tr>
+                    <th>WORDS</th>
+                    <th><span id="WordCount">0</span></th>                      
+                </tr>
+                <tr>
+                    <th>CHARACTERS</th>
+                    <th><span id="CharCount">0</span></th>
+                </tr>
+            </table>
+
+        </div> -->
+
+        <div class="count">
+            <div>
+              <h5 id="word-count">0</h5>
+              <p>Words</p>
+            </div>
+            <div>
+              <h5 id="charac-count">0</h5>
+              <p>Characters</p>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        
+    </div>
+    <!-- <footer class="footer">
+        <div class="contact-details">
+            <h3>Contact Us</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: +1 234 567 890</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://twitter.com"><img src="twitter_logo.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="instagram_logo.png" alt="Instagram"></a>
+            <a href="https://linkedin.com"><img src="linkedin_logo.png" alt="LinkedIn"></a>
+        </div>
+    </footer> -->
+    <script src="wordcounter.js"></script>
+</body>
+</html>

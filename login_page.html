@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        }
+    body{
+        background-image: url(/project\ images/book.jpg); 
+        background-size: cover;
+        
+        
+
+    }
+    .container h1{
+        margin-top: 0px;
+        margin-left: 50px;
+        margin-bottom: 0px;
+        color: rgb(4, 4, 4);
+        font-size: 90px;
+        font-weight: bold;
+        color: rgb(8, 8, 8);
+     
+        height: 150px;
+
+    }
+    .container{
+        width: 380px;
+        padding: 40px ;
+        border: 2px solid;
+        border-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 14px;
+        backdrop-filter: blur(90px);
+        
+    }
+    .box{
+       padding: 10px;
+        margin-right: 15px;
+        margin: 7px;
+        margin-top:2px;
+        
+        
+
+    }
+    
+    .box input{
+        background: none;
+        width: 90%;
+        padding: 18px;
+        font-size: 20px;
+        background: none;
+        color: rgb(10, 10, 10);
+        border-radius: 10px;
+        border-color: white solid;
+
+    }
+    .box input::placeholder{
+        color: rgb(5, 5, 5);
+        font-size: large;
+    }
+    #sgn{
+        padding: 8px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-top: 15px;
+        width: 30%;
+        font-size: 21px;
+        margin-left: 138px;
+        background:none;
+        color: white;      
+    } 
+    #sgn a {
+        text-decoration: none;
+        color: rgb(8, 8, 8);
+    }
+
+    #sgn:hover{
+        opacity: 0.8 ;
+        transition: all 0.3s ease-in-out .2s;
+        border: 2px solid black;
+        background-color: rgb(234, 235, 236);
+    }
+
+   .navbar {
+            background: rgba(0,0,0);
+            margin-top: 0;
+            padding-top: 0;
+            height: 80px;
+        }
+
+    .nav-list{
+        list-style-type: none;
+        display: flex;
+        justify-content: center; 
+        padding: 10px;
+     }
+
+
+   .nav-list li {
+     margin: 0 60px;
+   }
+
+
+   .nav-list li a {
+     font-size: 25px;
+     color: #fcfafa;
+     text-decoration: none;
+     padding: 20px 50px 20px;
+     display: block;
+     font-weight: 600;
+     border-radius: 5px;
+     transition: background-color 0.2s ease-out;
+   }
+
+
+   .nav-list li a:hover {
+     background-color: #302a2a;
+     color: white;
+     text-decoration: underline;
+     
+     transform: scale(0.9);
+     
+   }
+
+    .wcimg{
+            position: absolute;
+            top: 0px;
+            left: 7px;
+            size:1px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="links">
+            
+        <nav class="navbar">
+            <ul class="nav-list">
+              <li><a href="project.html">Home</a></li>
+              <li><a href="introduction_1.html">intro</a></li>
+              <li><a href="login_page.html">Login</a></li>
+              <li><a href="abot_team.html">About us</a></li>
+            </ul>
+        </nav>
+        
+    </section>
+    <!-- <div class="wcimg">
+       <img src="word_counter image.png" class="wcimg" width="90px" >
+    </div> -->
+    <DIV class="container">
+        <h1> LOGIN </h1>
+        <form action="" id="loginform"></form>
+            <div class="box">
+                <input type="email" id="email" placeholder="Enter email">
+            </div> 
+            <div class="box">
+                <input type="text" id="password" placeholder="Enter password">
+            </div>
+            <button id="sgn"><a> Login </a> </button>
+        </form>
+    </DIV>
+    <script src="form.js"></script>
+</body>
+</html>
